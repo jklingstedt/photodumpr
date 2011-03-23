@@ -16,6 +16,9 @@
 		function setBody ($bodyContent) {
 			$this->mainTemplate = str_replace('[--body--]', $bodyContent, $this->mainTemplate);
 		}
+		function setScripts ($scriptContent) {
+			$this->mainTemplate = str_replace('[--scripts--]', $scriptContent, $this->mainTemplate);
+		}
 		function returnMarkup () {
 			echo $this->mainTemplate;
 		}
